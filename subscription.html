@@ -1,0 +1,112 @@
+<html>
+<style>
+#f.name{
+    padding: 5px;
+    background-color:rgb(202, 163, 116);
+}
+#music {
+    padding: 5px;
+    color: #000;
+    font-size: 12px;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+    footer{
+     background-color:brown;
+   } 
+    </style>
+<title> Subscription</title>
+    <body bgcolor="black">
+        <head>
+            <table align="center" cellspacing="30">
+                <tr>
+                    <td> <a href="Home.html" style="text-decoration: none;"><font face="Times new roman" color="white" size="+3">Home</font></a></td>
+                   <td> <a href="News.html" style="text-decoration: none"><font face="Times new roman" Color="white" size="+3"> News</font></a></td>
+                  <td> <a href="Music.html" style="text-decoration: none"><font face="Times new roman" Color="white" size="+3"> Music</font></a></td>
+                    <td><a href="Videos.html" style="text-decoration: none"><font face="Times new roman" Color="white" size="+3"> Videos</font></a></td>
+                    </tr>
+                    </table>
+                    </head>
+<hr color="brown">
+<hr color="brown">
+<p style="text-align: center;"><font face="Times New roman" size="20" color="brown"><b><u> Subscription </u></b></font></p>
+<table cellspacing="0" align="center">
+    <tr>
+      <td>
+      <form align="center">
+       <label for="text"><font size="+1" face="Times new Roman">First Name:</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="text"></label><font size="+1" face="Times new Roman">Last Name:</font></label><br>
+        <pre>              <input type="text" placeholder="First Name..." name="F.name" id="F.name">          <input type="text" placeholder="Last Name..." name="L.name" id="L.name"></pre><br>
+       <label for="text"><font size="+1" face="Times new Roman">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></label> <br>
+       <pre><input type="text" name="E-mail" id="E-mail" placeholder="E-mail...">                    </pre>
+       <label for="Country"><Font face="Times new roman" size="+1">Country & Phone number</Font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+           <select id="country" onchange="country_code()">
+        <option value="select country">select country</option>
+                <option value="US">US</option>
+         <option value="NP">NP</option>
+         <option value="IND">IND</option>
+         <option value="UK">UK</option>
+         <option value="BR">BR</option>
+     </select>
+     <input type="tel" id="output" placeholder="Phone number...">
+     <script>   
+         function country_code(){
+          var val = document.getElementById("country").value;   
+         if (val === "select country"){ 
+     document.getElementById("output").value="";
+         }
+         else if (val === "US"){
+             document.getElementById("output").value= "+1";
+         }
+         else if (val === "NP"){
+             document.getElementById("output").value = "+977";
+         }  
+          else if (val === "IND"){
+             document.getElementById("output").value= "+91";
+         }  
+          else if (val === "UK"){
+             document.getElementById("output").value= " +44";
+         }  
+          else if (val === "BR"){
+             document.getElementById("output").value= "+55";
+             }
+     }
+     </script>
+     <br><br>
+       
+     <label for="textarea"><font size="+1" face="Times new Roman">Write about your yourself:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></label>
+      <pre>        <textarea name="textarea" placeholder="Write your queries..." id="textarea" cols="50" rows="10"></textarea>
+      <pre><input type="submit" name="submit" id="submit">                                    </pre>
+      </td> </tr>
+      </table>
+
+
+
+
+
+
+</body>
+<footer>
+                      
+    <table align="Center" cellpadding="40">
+      
+      <tr>
+         <th><font color="white">Connnect with us:</font></th>
+         <th><font color="white">Also contact usign:</font></th>
+         <th> <font color="white">Send us your reviews on:</font></th>
+         </tr>
+         <tr>
+          <th><font color="white">Facebook:<a href="https://www.facebook.com/arianagrande/"><img src="Facebook.png" title="Facebook" height="30px"></a><br><br>
+Instagram:<a href="https://www.instagram.com/arianagrande/"><img src="Instagram.png" height="30px" title="Instagram"></a><br><br>
+Youtube:<a href="https://www.youtube.com/channel/UC9CoOnJkIBMdeijd9qYoT_g"><img src="Youtube.png" height="30px" title="Youtube"></a><br><br>
+Twitter:<a href="https://twitter.com/ArianaGrande?lang=en#:~:text=camila%20(%40ArianaGrande)%20%7C%20Twitter"><img src="Twitter.png" title="Twitter" height="30px"></a></font>
+</th>                          
+<th valign="top"><font color="white">Fax no:+555555<br><br>
+Phone number:+9999999999<br><br>
+Telephone:98239829823</font></th>
+<th valign="top"><font color="white">*********@gmail.com</font></th> 
+</tr>               
+        </table>
+         
+     </footer>
+</html>
